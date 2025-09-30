@@ -29,7 +29,6 @@ pipeline {
 
         stage('Docker Run') {
             steps {
-                bat 'docker stop servicio1 || true && docker rm servicio1 || true'
                 bat 'docker run -d -p 8082:8082 --name servicio1 servicio1'
             }
         }
