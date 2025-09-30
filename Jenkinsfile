@@ -29,7 +29,7 @@ pipeline {
 
         stage('Docker Run') {
             steps {
-                bat 'docker run -d -p 8082:8082 --name servicio1 servicio1'
+                bat 'docker run -d -p 8761:8761 --name servicio1 servicio1'
             }
         }
     }
